@@ -59,7 +59,7 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({ aptitudeScores, interestS
                         <Card key={career.jobTitle} className="flex flex-col justify-between">
                             <div>
                                 <h3 className="text-xl font-bold text-cyan-400">{career.jobTitle}</h3>
-                                <p className="text-slate-300 mt-2 flex-grow text-sm">{career.careerPath}</p>
+                                <p className="text-slate-300 mt-2 flex-grow text-sm">{career.learningPath}</p>
                                 <p className="text-slate-400 mt-3 border-t border-slate-700 pt-3 text-xs italic">
                                     <strong>Why it's a good fit:</strong> {career.rationale}
                                 </p>

@@ -6,7 +6,7 @@ import Button from './ui/Button';
 import CareerDetailModal from './CareerDetailModal';
 import FeedbackForm from './FeedbackForm';
 import CareerExplorerChat from './CareerExplorerChat';
-import RefineResults from './RefineResults';
+//import RefineResults from './RefineResults';
 
 interface ResultsScreenProps {
     aptitudeScores: AptitudeScores;

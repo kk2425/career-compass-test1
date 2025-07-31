@@ -53,6 +53,9 @@ export const getFollowUpQuestions = async (
             }
         });
 
+        if (!response.text) {
+            throw new Error("No response text received from AI service.");
+        }
         const jsonString = response.text.trim();
         const result = JSON.parse(jsonString);
 
@@ -74,27 +77,40 @@ export const getCareerRoadmap = async (
     userAnswers: string[]
 ): Promise<AIRoadmap[]> => {
     try {
-        const prompt = `
-            You are a world-class career strategist specializing in guiding high school students (grades 10-12). 
-            A student has provided their assessment scores and answers to your follow-up questions.
-            Your task is to provide a detailed, actionable career roadmap for the top FIVE highly specific job titles that are a great fit, keeping in mind they are planning for college or future training.
+        const prompt = `You are a world-class career strategist guiding high school students (grades 10–12).
+A student has taken an aptitude + RIASEC interest assessment and answered situational questions revealing their work preferences.
 
-            **Student's Profile:**
-            - Aptitude Scores: ${JSON.stringify(aptitudeScores)}
-            - Interest Scores (RIASEC): ${JSON.stringify(interestScores)}
-            - Student's Answers to Your Situational Questions (these reveal their working style and motivations): ${JSON.stringify(userAnswers)}
+Your task is to return a **career roadmap** that is personalized, actionable, and realistic for students planning college or vocational paths.
 
-            **Your Task:**
-            Based on ALL the information above, recommend 5 specific job titles. For each job title, provide the following in a friendly and encouraging tone:
-            - jobTitle: The specific job title (e.g., "AI Ethics Researcher", not "AI").
-            - rationale: A concise, one-sentence explanation of *why* this career is a good match based on their specific profile. (e.g., "Your high logical score and interest in problem-solving make you a natural fit for this field.")
-            - careerPath: A brief, encouraging description of the career path and its potential (2-3 sentences).
-            - highSchoolSubjects: A list of 2-3 key high school subjects to focus on (e.g., "Physics, Advanced Math").
-            - potentialMajors: A list of 2-3 potential college majors or vocational programs to explore (e.g., "Computer Science, Cognitive Science").
-            - tools: A list of 2-3 beginner-friendly software or tools to start learning (e.g., "Python (for scripting), Figma (for design)").
-            - extracurriculars: A description of relevant extracurriculars, school clubs, or personal projects to get started (e.g., "Join the debate club, start a personal blog, volunteer at a local clinic").
-            - extraTip: One unique, actionable tip for a high schooler to get ahead in this field.
-        `;
+---
+
+**Student Input:**
+- Aptitude Scores: ${JSON.stringify(aptitudeScores)}
+- Interest Scores (RIASEC): ${JSON.stringify(interestScores)}
+- Answers to Situational Questions: ${JSON.stringify(userAnswers)}
+
+---
+
+**Output Format:** Return a JSON array of 5 objects.
+
+Each object must include:
+- \`jobTitle\`: Specific career role (e.g., "Product Manager", "UX Researcher", "Cybersecurity Analyst")
+- \`careerTag\`: One of "Entry-level friendly", "Mid-level (aspirational)", or "Long-term vision role".
+- \`rationale\`: 1 sentence summarizing why this career fits their scores + answers.
+- \`steppingStoneRoles\`: A list of 2–3 realistic starting roles that lead into this career (e.g., "QA Tester", "Product Intern", "Research Assistant").
+- \`learningPath\`: A short step-by-step plan showing how a student might progress toward this role (e.g., "Start with personal coding projects → Join robotics club → Intern as QA Analyst → Transition to Product via mentorship or MBA").
+- \`highSchoolSubjects\`: 2–3 school subjects to focus on.
+- \`potentialMajors\`: 2–3 relevant college majors or certifications.
+- \`tools\`: 2–3 beginner-friendly tools to explore (e.g., "Figma", "Python", "Power BI").
+- \`extracurriculars\`: Suggested clubs, competitions, or personal projects to try.
+- \`extraTip\`: 1 custom actionable tip just for this student to stand out in the field.
+
+---
+
+**Style:**
+- Be supportive, future-oriented, and realistic.
+- Show a growth mindset — students should see these as paths, not fixed labels.
+- Avoid vague advice or overly technical jargon.`;
 
         const response = await ai.models.generateContent({
             model: "gemini-2.5-flash",
@@ -110,15 +126,17 @@ export const getCareerRoadmap = async (
                                 type: Type.OBJECT,
                                 properties: {
                                     jobTitle: { type: Type.STRING },
+                                    careerTag: { type: Type.STRING },
                                     rationale: { type: Type.STRING },
-                                    careerPath: { type: Type.STRING },
+                                    steppingStoneRoles: { type: Type.ARRAY, items: { type: Type.STRING } },
+                                    learningPath: { type: Type.STRING },
                                     highSchoolSubjects: { type: Type.ARRAY, items: { type: Type.STRING } },
                                     potentialMajors: { type: Type.ARRAY, items: { type: Type.STRING } },
                                     tools: { type: Type.ARRAY, items: { type: Type.STRING } },
                                     extracurriculars: { type: Type.STRING },
                                     extraTip: { type: Type.STRING }
                                 },
-                                required: ["jobTitle", "rationale", "careerPath", "highSchoolSubjects", "potentialMajors", "tools", "extracurriculars", "extraTip"]
+                                required: ["jobTitle", "careerTag", "rationale", "steppingStoneRoles", "learningPath", "highSchoolSubjects", "potentialMajors", "tools", "extracurriculars", "extraTip"]
                             }
                         }
                     }
@@ -126,6 +144,9 @@ export const getCareerRoadmap = async (
             }
         });
         
+        if (!response.text) {
+            throw new Error("No response text received from AI service.");
+        }
         const jsonString = response.text.trim();
         const result = JSON.parse(jsonString);
 
@@ -227,6 +248,9 @@ Return your response in the specified JSON format.`;
             }
         });
 
+        if (!response.text) {
+            throw new Error("No response text received from AI service.");
+        }
         const jsonString = response.text.trim();
         const result = JSON.parse(jsonString);
 

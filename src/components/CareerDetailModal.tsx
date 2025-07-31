@@ -45,7 +45,7 @@ const CareerDetailModal: React.FC<CareerDetailModalProps> = ({ career, onClose }
                 </button>
 
                 <h2 id="career-title" className="text-2xl md:text-3xl font-bold text-cyan-400 pr-8">{career.jobTitle}</h2>
-                <p className="mt-2 text-slate-300">{career.careerPath}</p>
+                <p className="mt-2 text-slate-300">{career.learningPath}</p>
                 
                 <div className="mt-4 bg-slate-900/50 p-4 rounded-lg border border-slate-700">
                     <h3 className="font-semibold text-cyan-400 mb-1 text-base">Why It's a Good Fit</h3>

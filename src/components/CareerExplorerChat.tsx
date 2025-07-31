@@ -62,7 +62,7 @@ const CareerExplorerChat: React.FC<CareerExplorerChatProps> = ({ aptitudeScores,
 
         try {
             const response = await chat.sendMessage({ message: textToSend });
-            const modelMessage: ChatMessage = { role: 'model', text: response.text };
+            const modelMessage: ChatMessage = { role: 'model', text: response.text ?? "" };
             setMessages(prev => [...prev, modelMessage]);
         } catch (error) {
             console.error("Error sending message:", error);
