@@ -1,0 +1,6 @@
+{
+  "name": "Career Compass AI",
+  "description": "An intelligent career guidance application that uses aptitude and interest assessments, combined with optional AI-powered personalization, to recommend suitable career paths.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

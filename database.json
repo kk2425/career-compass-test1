@@ -1,0 +1,257 @@
+ [
+  {
+    "userProfile": {
+      "aptitudeScores": {
+        "verbal": 0.5,
+        "logical": 0.6666666666666666,
+        "spatial": 1,
+        "numerical": 1
+      },
+      "interestScores": {
+        "realistic": 1,
+        "investigative": 0.95,
+        "artistic": 0.95,
+        "social": 0.9,
+        "enterprising": 0.85,
+        "conventional": 0.9
+      },
+      "userAnswers": [
+        "Every aspect",
+        "enjoys thoroughly researching and analyzing all the information & getting hands-on immediately to test different approaches",
+        "organizing the overall strategy, the one ensuring the precision and quality of the work"
+      ]
+    },
+    "aiRecommendation": {
+      "careerPath": "This path involves designing and overseeing the construction of buildings, focusing on their structural integrity, mechanical systems, and energy efficiency. It's a blend of creative design and rigorous engineering, ensuring safety and functionality in the built environment.",
+      "extraTip": "Start sketching and analyzing the structural elements of buildings you admire, trying to understand how they stand and function.",
+      "extracurriculars": "Join a STEM club, participate in a design or engineering competition, volunteer for a local community building project, or explore 3D printing.",
+      "highSchoolSubjects": [
+        "Physics",
+        "Calculus",
+        "Architectural Drafting/Design"
+      ],
+      "jobTitle": "Architectural Engineer",
+      "potentialMajors": [
+        "Architectural Engineering",
+        "Civil Engineering",
+        "Architecture"
+      ],
+      "rationale": "Your exceptional spatial and numerical aptitudes, combined with strong realistic, investigative, and artistic interests, make you well-suited to design and optimize the structural and functional aspects of buildings with precision and creativity.",
+      "tools": [
+        "AutoCAD (for drafting)",
+        "SketchUp (for 3D modeling)",
+        "Excel (for calculations)"
+      ]
+    },
+    "userFeedback": {
+      "rating": 5,
+      "comment": "",
+      "suggestedBetterFit": ""
+    },
+    "timestamp": "2025-07-29T07:43:06.188Z"
+  },
+  {
+    "userProfile": {
+      "aptitudeScores": {
+        "verbal": 0.5,
+        "logical": 0.6666666666666666,
+        "spatial": 1,
+        "numerical": 1
+      },
+      "interestScores": {
+        "realistic": 1,
+        "investigative": 0.95,
+        "artistic": 0.95,
+        "social": 0.9,
+        "enterprising": 0.85,
+        "conventional": 0.9
+      },
+      "userAnswers": [
+        "Every aspect",
+        "enjoys thoroughly researching and analyzing all the information & getting hands-on immediately to test different approaches",
+        "organizing the overall strategy, the one ensuring the precision and quality of the work"
+      ]
+    },
+    "aiRecommendation": {
+      "careerPath": "This role involves conceptualizing, designing, and developing new physical products, considering user experience, manufacturability, and aesthetic appeal. You'd guide a product from an initial idea through prototyping to mass production, ensuring both innovation and quality.",
+      "extraTip": "Dismantle old gadgets or appliances to understand their internal mechanics and how different parts fit together.",
+      "extracurriculars": "Build projects using Arduino/Raspberry Pi, join a robotics club, participate in a design challenge, or even create and sell a small handmade product.",
+      "highSchoolSubjects": [
+        "Physics",
+        "Geometry",
+        "Design & Technology"
+      ],
+      "jobTitle": "Product Design Engineer",
+      "potentialMajors": [
+        "Mechanical Engineering",
+        "Industrial Design",
+        "Product Design"
+      ],
+      "rationale": "Leveraging your excellent spatial and numerical aptitudes along with strong realistic, investigative, and artistic interests, you would thrive in creating innovative and functional physical products, focusing on meticulous execution and overall strategy.",
+      "tools": [
+        "Fusion 360 (CAD/CAM)",
+        "Adobe Illustrator (for concept sketching)",
+        "3D printer (for rapid prototyping)"
+      ]
+    },
+    "userFeedback": {
+      "rating": 4,
+      "comment": "",
+      "suggestedBetterFit": ""
+    },
+    "timestamp": "2025-07-29T07:43:08.981Z"
+  },
+  {
+    "userProfile": {
+      "aptitudeScores": {
+        "verbal": 0.5,
+        "logical": 0.6666666666666666,
+        "spatial": 1,
+        "numerical": 1
+      },
+      "interestScores": {
+        "realistic": 1,
+        "investigative": 0.95,
+        "artistic": 0.95,
+        "social": 0.9,
+        "enterprising": 0.85,
+        "conventional": 0.9
+      },
+      "userAnswers": [
+        "Every aspect",
+        "enjoys thoroughly researching and analyzing all the information & getting hands-on immediately to test different approaches",
+        "organizing the overall strategy, the one ensuring the precision and quality of the work"
+      ]
+    },
+    "aiRecommendation": {
+      "careerPath": "This field involves using statistical analysis, programming, and machine learning to find patterns, make predictions, and build intelligent systems from large datasets. It's about turning complex data into actionable insights and robust solutions, with a strong emphasis on precision and quality.",
+      "extraTip": "Explore online courses on platforms like Coursera or edX focusing on introductory Python for data analysis or machine learning fundamentals.",
+      "extracurriculars": "Join a coding club, participate in data analytics competitions (e.g., Kaggle), or start a personal project analyzing public datasets (e.g., sports stats, weather data).",
+      "highSchoolSubjects": [
+        "Statistics",
+        "Calculus",
+        "Computer Science"
+      ],
+      "jobTitle": "Data Scientist",
+      "potentialMajors": [
+        "Data Science",
+        "Computer Science",
+        "Applied Mathematics"
+      ],
+      "rationale": "Your excellent numerical and logical aptitudes, combined with an investigative interest in analyzing information and a hands-on desire to test approaches, make you a strong fit for extracting insights and building intelligent systems with precision.",
+      "tools": [
+        "Python (with Pandas/NumPy)",
+        "Google Colab (for experiments)",
+        "Tableau (for visualization)"
+      ]
+    },
+    "userFeedback": {
+      "rating": 4,
+      "comment": "",
+      "suggestedBetterFit": ""
+    },
+    "timestamp": "2025-07-29T07:43:10.262Z"
+  },
+  {
+    "userProfile": {
+      "aptitudeScores": {
+        "verbal": 0.5,
+        "logical": 0.6666666666666666,
+        "spatial": 1,
+        "numerical": 1
+      },
+      "interestScores": {
+        "realistic": 1,
+        "investigative": 0.95,
+        "artistic": 0.95,
+        "social": 0.9,
+        "enterprising": 0.85,
+        "conventional": 0.9
+      },
+      "userAnswers": [
+        "Every aspect",
+        "enjoys thoroughly researching and analyzing all the information & getting hands-on immediately to test different approaches",
+        "organizing the overall strategy, the one ensuring the precision and quality of the work"
+      ]
+    },
+    "aiRecommendation": {
+      "careerPath": "This field focuses on the design, construction, operation, and application of robots and automated systems. It integrates mechanical engineering, electrical engineering, and computer science to create intelligent machines capable of performing tasks autonomously and with high precision.",
+      "extraTip": "Get hands-on with a simple robotics kit and try to program it to perform basic movements or interactions with its environment.",
+      "extracurriculars": "Join a robotics competition team (e.g., FIRST Robotics), build small robot kits, learn basic electronics, or explore programming microcontrollers like Arduino.",
+      "highSchoolSubjects": [
+        "Physics",
+        "Calculus",
+        "Computer Science"
+      ],
+      "jobTitle": "Robotics Engineer",
+      "potentialMajors": [
+        "Robotics Engineering",
+        "Mechatronics Engineering",
+        "Electrical Engineering"
+      ],
+      "rationale": "An ideal fit for your excellent spatial, numerical, and logical aptitudes, combined with strong realistic and investigative interests, enabling you to design, build, and precisely control complex automated systems and ensure their quality.",
+      "tools": [
+        "Arduino IDE (for microcontrollers)",
+        "SolidWorks (CAD)",
+        "Python (for programming robots)"
+      ]
+    },
+    "userFeedback": {
+      "rating": 3,
+      "comment": "",
+      "suggestedBetterFit": ""
+    },
+    "timestamp": "2025-07-29T07:43:13.487Z"
+  },
+  {
+    "userProfile": {
+      "aptitudeScores": {
+        "verbal": 0.5,
+        "logical": 0.6666666666666666,
+        "spatial": 1,
+        "numerical": 1
+      },
+      "interestScores": {
+        "realistic": 1,
+        "investigative": 0.95,
+        "artistic": 0.95,
+        "social": 0.9,
+        "enterprising": 0.85,
+        "conventional": 0.9
+      },
+      "userAnswers": [
+        "Every aspect",
+        "enjoys thoroughly researching and analyzing all the information & getting hands-on immediately to test different approaches",
+        "organizing the overall strategy, the one ensuring the precision and quality of the work"
+      ]
+    },
+    "aiRecommendation": {
+      "careerPath": "This role involves conceptualizing and designing the core mechanics, systems, levels, and user experience of video games. It requires a unique blend of creativity, analytical thinking, and technical understanding to bring engaging, interactive worlds to life, overseeing every aspect of the strategy.",
+      "extraTip": "Deconstruct your favorite games, analyzing their mechanics, level design, and user interface to understand *why* they are engaging.",
+      "extracurriculars": "Join a game development club, participate in a game jam (hackathon for games), create mods for existing games, or design your own simple board game or digital prototype.",
+      "highSchoolSubjects": [
+        "Computer Science",
+        "Art/Digital Media",
+        "Physics"
+      ],
+      "jobTitle": "Game Designer (Technical/Systems Focus)",
+      "potentialMajors": [
+        "Game Design",
+        "Computer Science",
+        "Interactive Media"
+      ],
+      "rationale": "Your strong spatial, logical, and numerical aptitudes, combined with high artistic, realistic, and investigative interests, are perfect for conceptualizing and precisely implementing game mechanics and systems, from overall strategy to detailed execution.",
+      "tools": [
+        "Unity (game engine)",
+        "Blender (3D modeling)",
+        "Figma (UI/UX design)"
+      ]
+    },
+    "userFeedback": {
+      "rating": 5,
+      "comment": "",
+      "suggestedBetterFit": ""
+    },
+    "timestamp": "2025-07-29T07:43:14.669Z"
+  }
+]
