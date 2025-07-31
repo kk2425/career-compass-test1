@@ -1,14 +1,12 @@
-
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/career-compass-test1/', 
   plugins: [react()],
   server: {
     port: 5173,
     open: true,
-    // Proxy API requests to the backend server during development to avoid CORS issues.
     proxy: {
       '/api': {
         target: 'http://localhost:3001',
